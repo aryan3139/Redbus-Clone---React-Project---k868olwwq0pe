@@ -24,7 +24,7 @@ body {
     background-color: #D41111;
   }
   .Loginfn{
-    width: 1280px;
+    width: 1308px;
     flex-direction: row;
     height:auto;
     background-color: goldenrod;
@@ -33,7 +33,7 @@ body {
   
   }
   .Registerfn{
-    width: 1280px;
+    width: 1308px;
     height:auto;
     background-color: goldenrod;
     text-align:center;
@@ -47,14 +47,14 @@ body {
 
   }
   .Footerfn{
-    width:1268px;
+    width:1295px;
     text-align:center;
     margin:auto;
 
   }
 .Homefn{
-  width: 1280px;
+  width: 1308px;
     height:auto;
-    text-align:center;
+ background-color: #D9D9D9;
 
 }

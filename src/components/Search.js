@@ -45,33 +45,33 @@ const Search = () => {
 
       
   return (
-    <div>
+    <div className='Homefn'>
         {/* Replace input type text with dropdown data - data slready stored in localstorage  -- for list of cities */}
         From: 
         <Form.Select id="from" onChange={updateData}>
-          <option value="jaipur">jaipur</option>
-          <option value="chandigarh">chandigarh</option>
-          <option value="pune">pune</option>
-          <option value="mumbai">mumbai</option>
-          <option value="kolkata">kolkata</option>
-          <option value="chennai">chennai</option>
-          <option value="hyderabad">hyderabad</option>
+          <option value="jaipur">Jaipur</option>
+          <option value="chandigarh">Chandigarh</option>
+          <option value="pune">Pune</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="chennai">Chennai</option>
+          <option value="hyderabad">Hyderabad</option>
         </Form.Select>
         {/* <input type="text" id="from" onChange={updateData} value={formdata.from} /><br></br> */}
         To: 
         <Form.Select id="to" onChange={updateData}>
-          <option value="jaipur">jaipur</option>
-          <option value="chandigarh">chandigarh</option>
-          <option value="pune">pune</option>
-          <option value="mumbai">mumbai</option>
-          <option value="kolkata">kolkata</option>
-          <option value="chennai">chennai</option>
-          <option value="vijayawada">vijayawada</option>
+          <option value="jaipur">Jaipur</option>
+          <option value="chandigarh">Chandigarh</option>
+          <option value="pune">Pune</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="chennai">Chennai</option>
+          <option value="vijayawada">Vijayawada</option><br></br><br></br>
         </Form.Select>
         {/* <input type="text" id="to" onChange={updateData} value={formdata.to} /><br></br> */}
         Date: <input type="date" id="date" onChange={updateData} value={formdata.date} /><br></br><br></br>
 
-        <button onClick={searchFn}>Search Busses</button>
+        <button className="btn btn-danger" onClick={searchFn}>Search Buses</button>
         <br></br>
         <br></br>
     </div>

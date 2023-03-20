@@ -84,14 +84,14 @@ const Login = () => {
     }, [loginstatus])
 
   return (
-    <div>
+    <div className="Loginfn">
         
-        Username: <input type="text" id="username" onChange={updateData} value={loginformdata.username} /><br></br>
+        Username: <input type="text" id="username" onChange={updateData} value={loginformdata.username} /><br></br><br></br>
 
         Password: <input type="password" id="password" onChange={updateData} value={loginformdata.password} /><br></br><br></br>
 
 
-            <button onClick={loginFn}>Login</button>
+            <button className="btn btn-success" onClick={loginFn}>Login</button>
             <br></br>
             <br></br>
 

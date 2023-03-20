@@ -42,26 +42,25 @@ const Header = () => {
         <Navbar variant="light">
           <Container>
             {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
-            
+    
             <Nav className="me-auto">
               {
                 loginStatus ? 
                 <>
-                  <Nav.Link onClick={logoutFn}>Logout</Nav.Link>
-                  {loginStatus && <Nav.Link>Hi {username} !</Nav.Link>}
+                  <Nav.Link onClick={logoutFn}><b>Logout</b></Nav.Link>
+                  {loginStatus && <Nav.Link><b>{username}!</b></Nav.Link>}
                 </>
                 : 
                 <>
-                  <Nav.Link><Link to="/login">Login</Link></Nav.Link>
-                  <Nav.Link><Link to="/register">Register</Link></Nav.Link>
+                  <Nav.Link><Link to="/login"><b>Login</b></Link></Nav.Link>
+                  <Nav.Link><Link to="/register"><b>Register</b></Link></Nav.Link>
                 </>
+              
               }
               
-              
 
-              
             </Nav>
-
+   
           </Container>
         </Navbar>
 
