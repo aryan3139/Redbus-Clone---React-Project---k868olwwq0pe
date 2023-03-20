@@ -18,8 +18,9 @@ import Menubar from './template/Menubar';
 import Footer from './template/Footer';
 
 import DataApp from './DataApp';
+import { Button } from 'bootstrap';
 
-const App=()=> {
+function App() {
   return (
 
     <BrowserRouter>
@@ -31,9 +32,11 @@ const App=()=> {
               <Menubar/>
 
               <Row>
-              
+                {/* <Col xs={3} className='bg-primary'>
+                    <LeftSidebar/>
+                </Col> */}
 
-                <Col xs={6}>
+                <Col xs={12}>
                   <Routes>
                     <Route path="/home" element={<Home/>}/>
                     <Route path="/list" element={<List/>}/>
@@ -46,7 +49,9 @@ const App=()=> {
                   </Routes>
                 </Col>
 
-              
+                {/* <Col xs={3} className='bg-primary'>
+                  <RightSidebar/>
+                </Col> */}
 
               </Row>
 
@@ -69,3 +74,9 @@ export default App;
 
 
 // Rest pages - context check (Authorization)
+
+
+// switch Button
+// sorting - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+// seat selection
+// checkout -passenger and payment details

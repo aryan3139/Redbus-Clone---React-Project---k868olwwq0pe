@@ -3,8 +3,9 @@ import Search from './Search';
 
 const Home = () => {
 
+  
   return (
-    <div className="Homefn">
+    <div>
       <Search/>
     </div>
   )

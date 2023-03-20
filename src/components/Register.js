@@ -41,13 +41,13 @@ const Register = () => {
 
 
     return (
-        <div className="Registerfn">
+        <div>
 
-            Username: <input type="text" id="username" onChange={updateData} value={formdata.username} /><br></br><br></br>
+            Username: <input type="text" id="username" onChange={updateData} value={formdata.username} /><br></br>
 
             Password: <input type="password" id="password" onChange={updateData} value={formdata.password} /><br></br><br></br>
 
-            <button  className="bg-info" onClick={registerFn}>Register</button>
+            <button onClick={registerFn}>Register</button>
             <br></br>
             <br></br>
 
@@ -56,7 +56,7 @@ const Register = () => {
                 </div>
             }
         </div>
-    );
+    )
 }
 
-export default Register;
+export default Register

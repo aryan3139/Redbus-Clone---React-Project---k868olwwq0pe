@@ -28,15 +28,16 @@ const Header = () => {
   }
 
   return (
-   
-    <Row>
-        <Col sm={3}>
-      <div className="Headerimg"><img src="https://st.redbus.in/Images/INDOFFER/FESTIVE200/Hero01.png"/></div>
+    <Row className='bg-success'>
+        <Col xs={1}>
+        
+          <img src="https://i.pinimg.com/originals/58/91/2b/58912b2e3ad6a279347eebb47751a9c1.png" className='img-fluid'/>
+          {/* <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"/> */}
         </Col>
-        <Col xs={3}>
+        <Col xs={9}>
           {/* Search bar */}
         </Col>
-        <Col xs={6}>
+        <Col xs={2}>
           
         <Navbar variant="light">
           <Container>
@@ -67,7 +68,6 @@ const Header = () => {
         </Col>
         
     </Row>
-   
   )
 }
 
