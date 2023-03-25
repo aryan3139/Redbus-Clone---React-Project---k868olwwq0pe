@@ -1,82 +1,35 @@
-import React from 'react';
+import React from 'react'
 import '../styles/App.css';
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './home/Home';
+import BusList from './booking/BusList';
+import Nav from './layout/Nav';
+import NotFound from './general/NotFound';
+import PrintTicket from './booking/PrintTicket';
+import Footer from './home/Footer';
 
-import Home from './Home';
-import List from './List';
-import Checkout from './Checkout';
-import Register from './Register';
-import Login from './Login';
-import NotFound from './NotFound';
 
-import Header from './template/Header';
-import Menubar from './template/Menubar';
-import Footer from './template/Footer';
 
-import DataApp from './DataApp';
-import { Button } from 'bootstrap';
+const App = () => {
 
-function App() {
+
   return (
 
     <BrowserRouter>
-        <DataApp>
-          
-            <Container className='container-fluid'>
+        <Nav />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/bus-tickets' element={<BusList />} /> 
+        <Route path='/booked-ticket' element={<PrintTicket />} /> 
+        <Route path='/*' element={<NotFound />} /> 
 
-              <Header/>
-              <Menubar/>
 
-              <Row>
-                {/* <Col xs={3} className='bg-primary'>
-                    <LeftSidebar/>
-                </Col> */}
 
-                <Col xs={12}>
-                  <Routes>
-                    <Route path="/home" element={<Home/>}/>
-                    <Route path="/list" element={<List/>}/>
-                    <Route path="/checkout" element={<Checkout/>}/>
-                    <Route path="/register" element={<Register/>}/>
-                    <Route path="/login" element={<Login/>}/>
-
-                    <Route path='/' element={<Home/>}/>
-                    <Route path='/*' element={<NotFound/>}/>
-                  </Routes>
-                </Col>
-
-                {/* <Col xs={3} className='bg-primary'>
-                  <RightSidebar/>
-                </Col> */}
-
-              </Row>
-
-              <Footer/>
-
-            </Container>
-        </DataApp>
+      </Routes>
+      <Footer/>
     </BrowserRouter>
-  );
+  )
 }
 
+
 export default App;
-
-
-
-
-// Register - form, localStorage
-
-// Login - form, localStorage, set context var (Authentication)
-
-
-// Rest pages - context check (Authorization)
-
-
-// switch Button
-// sorting - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-// seat selection
-// checkout -passenger and payment details
